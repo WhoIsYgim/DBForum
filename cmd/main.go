@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	log.Println("connection successful")
+	log.Println("connected")
 	defer db.Close()
 
 	repositories := repositories.NewRepositories(db)
